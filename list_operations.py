@@ -138,6 +138,8 @@ def custom_remove(input_list, value):
         if input_list[i] == value:
             del(input_list[i])
             # input_list[i:] = input_list[i+1:]
+            # This method doesn't work because input_list[i:] creates a "new" list different from the original input_list.
+            # The test case checks to see if we modified the original input_list. 
             break
 
 def custom_pop(input_list):
